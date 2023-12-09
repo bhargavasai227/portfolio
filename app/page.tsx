@@ -10,6 +10,7 @@ export default function Home() {
     <main className="flex min-h-[70vh] items-center justify-center ">
       <div className='px-24'>
       <motion.div
+        whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: .5 }}
