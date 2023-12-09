@@ -17,7 +17,7 @@ export default function Home() {
       >
     <p className=' inline px-1 text-4xl'>Hi there, my name is <u>Bhargav</u>. </p>
 
-    <Image priority src={profile} className=' inline rounded-full w-[10%] hover:w-[20%] duration-500 ease-in-out ' alt="profile pic"/>
+    <Image priority src={profile} className=' inline rounded-full sm:w-[10%] hover:w-[20%] w-[40vw] p-2 duration-500 ease-in-out ' alt="profile pic"/>
    </motion.div>
     <br/>
     <motion.div

@@ -1,4 +1,4 @@
-// Pro.tsx
+"use client"
 import Link from "next/link";
 import React from 'react';
 import data from "../../public/data";
@@ -16,9 +16,9 @@ function Pro() {
   const projects: Project[] = data;
 
   return (
-    <div className="flex flex-col  items-center gap-6">
+    <div className="flex flex-col  items-center gap-6 m-2">
       <h1 className="px-7 text-2xl font-san shadow-lg bg-slate-100 bg-opacity-20 backdrop-blur-lg font-semibold ">Projects</h1>
-      <div className="flex gap-4 justify-evenly items-center p-3">
+      <div className="flex justify-evenly items-center p-3 flex-col md:flex-row ">
         {projects.map((project, index) => (
           <Card key={index} project={project} />
         ))}

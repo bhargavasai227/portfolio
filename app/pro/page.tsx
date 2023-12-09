@@ -11,7 +11,7 @@ interface Project {
 export default function Home(){
     const projects: Project[] = data;
     return(
-        <div className="flex gap-4 justify-evenly items-center p-3 m-4">
+        <div className="flex gap-4 justify-evenly items-center p-3 m-4 flex-col md:flex-row">
         {projects.map((project, index) => (
           <Card key={index} project={project} />
         ))}

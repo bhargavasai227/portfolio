@@ -22,8 +22,8 @@ function Card({ project }: CardProps) {
       <span>{project.name}</span>
       <span>{project.description}</span>
       <div className="gap-4 flex px-5 p-2">
-      <a className="border border-white hover:bg-black bg-orange-300 rounded-xl min-w-[5vw] text-center" href={project.link}><button>Visit</button></a>
-      <a className="bg-blue-600 rounded-xl min-w-[5vw] text-center hover:bg-black  ease-in-out duration-150" href={project.git_link}><button >Git</button></a>
+      <a className="border border-white hover:bg-black bg-orange-300 rounded-xl min-w-[10vw] text-center" href={project.link}><button>Visit</button></a>
+      <a className="bg-blue-600 rounded-xl min-w-[10vw] text-center hover:bg-black  ease-in-out duration-150" href={project.git_link}><button >Git</button></a>
       </div>
     </div>
   );
