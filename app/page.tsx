@@ -3,6 +3,8 @@ import { motion } from "framer-motion"
 import Image from 'next/image'
 import profile from "../public/profile.jpg"
 import Pro from './components/Pro'
+import About from "./components/About"
+import Contact from "./components/Contact"
 export default function Home() {
   return (
   <div>
@@ -31,11 +33,18 @@ export default function Home() {
 
     </main>
     <motion.div
-     whileInView={{ opacity: 1,x:0 }}
-    initial={{ opacity: 0, y: -20,  scale:0.9}}
-    animate={{ opacity: 1, y: 0, scale:1 }}
-    transition={{ duration: .5 }}
+    whileInView={{y:[15,0],opacity:[0,1]}}
+    transition={{duration:2}}
+    ><About/></motion.div>
+    <motion.div
+      whileInView={{y:[-19,0],opacity:[0,1]}}
+      transition={{duration:3}}
   ><Pro/></motion.div>
+  <motion.div
+      whileInView={{y:[19,0],opacity:[0,1]}}
+      transition={{duration:5}}
+  ><Contact/></motion.div>
+
     
     </div>
   )

@@ -15,7 +15,7 @@ export default function Home(){
         {projects.map((project, index) => (
           <Card key={index} project={project} />
         ))}
-        <a href="https://github.com/bhargavasai227?tab=repositories" className="inline-block">gitHub</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/bhargavasai227?tab=repositories" className="inline-block bg-gray-300 p-2 m-1 rounded-xl text-black">gitHub</a>
       </div>
     )
 }
