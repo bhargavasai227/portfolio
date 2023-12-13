@@ -5,6 +5,8 @@ import profile from "../public/profile.jpg"
 import Pro from './components/Pro'
 import About from "./components/About"
 import Contact from "./components/Contact"
+import Skill from "./components/Skills"
+import Edu from "./components/Edu"
 export default function Home() {
   return (
   <div>
@@ -33,16 +35,25 @@ export default function Home() {
 
     </main>
     <motion.div
-    whileInView={{y:[15,0],opacity:[0,1]}}
+    whileInView={{y:[-15,0],opacity:[0,1]}}
     transition={{duration:2}}
     ><About/></motion.div>
     <motion.div
       whileInView={{y:[-19,0],opacity:[0,1]}}
-      transition={{duration:3}}
+      transition={{duration:2}}
+  ><Skill/></motion.div>
+      <motion.div
+      whileInView={{y:[-19,0],opacity:[0,1]}}
+      transition={{duration:2}}
   ><Pro/></motion.div>
   <motion.div
+      whileInView={{y:[-10,0],opacity:[0,1]}}
+      transition={{duration:2}}
+  ><Edu/></motion.div>
+  
+  <motion.div
       whileInView={{y:[19,0],opacity:[0,1]}}
-      transition={{duration:5}}
+      transition={{duration:3.5}}
   ><Contact/></motion.div>
 
     
